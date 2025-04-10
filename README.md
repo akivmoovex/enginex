@@ -1,6 +1,6 @@
-# MotorEx Dashboard
+# EngineX Dashboard
 
-A modern, responsive dashboard application for MotorEx management system.
+A modern, responsive dashboard application for EngineX management system.
 
 ## Features
 
@@ -23,7 +23,7 @@ A modern, responsive dashboard application for MotorEx management system.
 ## Project Structure
 
 ```
-MotorEx/
+EngineX/
 ├── css/
 │   ├── dashboard.css
 │   ├── mobile-menu.css
@@ -43,7 +43,7 @@ MotorEx/
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/motorex-dashboard.git
+git clone https://github.com/akivmoovex/EngineX.git
 ```
 
 2. Open the project in your preferred code editor
@@ -71,6 +71,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Contact
 
-Your Name - your.email@example.com
+Akiv Solomon - akivmoovex
 
-Project Link: [https://github.com/yourusername/motorex-dashboard](https://github.com/yourusername/motorex-dashboard) 
+Project Link: [https://github.com/akivmoovex/EngineX](https://github.com/akivmoovex/EngineX) 
