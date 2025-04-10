@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MotorEx - Login</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .login-container {
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+        }
+        .login-box {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .logo {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .logo h1 {
+            color: #333;
+            font-size: 28px;
+            margin: 0;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #666;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .input-group {
+            display: flex;
+            gap: 10px;
+        }
+        .country-code-select {
+            width: 80px;
+        }
+        .login-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .login-btn:hover {
+            background-color: #2980b9;
+        }
+        .login-message {
+            margin-top: 15px;
+            padding: 10px;
+            border-radius: 4px;
+            text-align: center;
+        }
+        .login-message.error {
+            background-color: #ffebee;
+            color: #c62828;
+        }
+        .login-message.success {
+            background-color: #e8f5e9;
+            color: #2e7d32;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <div class="logo">
+                <h1>MotorEx</h1>
+            </div>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="phoneNumber">Phone Number</label>
+                    <div class="input-group">
+                        <select id="countryCode" class="country-code-select">
+                            <option value="+260" selected data-flag="zm">🇿🇲</option>
+                            <option value="+27" data-flag="za">🇿🇦</option>
+                            <option value="+263" data-flag="zw">🇿🇼</option>
+                            <option value="+972" data-flag="il">🇮🇱</option>
+                        </select>
+                        <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Enter your phone number" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Enter username" maxlength="8" required>
+                </div>
+                <div class="form-group sms-verification" style="display: none;">
+                    <label for="smsCode">SMS Verification Code</label>
+                    <div class="input-group">
+                        <input type="text" id="smsCode" name="smsCode" placeholder="Enter 6-digit code" maxlength="6">
+                        <button type="button" class="resend-btn" id="resendSms">Resend</button>
+                    </div>
+                </div>
+                <button type="submit" class="login-btn" id="loginBtn">Login</button>
+            </form>
+            <div class="login-message" id="loginMessage"></div>
+        </div>
+    </div>
+
+    <script src="js/login.js"></script>
+</body>
+</html> 

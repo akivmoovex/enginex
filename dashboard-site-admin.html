@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MotorEx - Site Admin Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/site-admin.css">
+    <link rel="stylesheet" href="css/mobile-menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="dashboard-header">
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-text">MOTOR<span class="logo-highlight">EX</span></span>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#" class="active">Dashboard</a></li>
+                </ul>
+            </nav>
+            <div class="user-controls">
+                <div class="user-dropdown">
+                    <span class="user-name">Site Admin</span>
+                    <div class="dropdown-content">
+                        <a href="#" id="desktopLogoutBtn">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <div class="mobile-user-info">
+                <span class="mobile-user-role">Site Admin</span>
+            </div>
+            <button class="mobile-menu-close" id="mobileMenuClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="mobile-menu-footer">
+            <a href="#" class="mobile-logout-btn" id="mobileLogoutBtn">
+                <i class="fas fa-sign-out-alt"></i>
+                Logout
+            </a>
+        </div>
+    </div>
+
+    <main class="dashboard-main">
+        <div class="dashboard-container">
+            <h1>Site Admin Dashboard</h1>
+            <div class="dashboard-grid">
+                <div class="kpi-card">
+                    <div class="kpi-icon"><i class="fas fa-building"></i></div>
+                    <div class="kpi-content">
+                        <h3>Active Sites</h3>
+                        <p class="kpi-value">Loading...</p>
+                        <p class="kpi-change">Updating...</p>
+                    </div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-icon"><i class="fas fa-users"></i></div>
+                    <div class="kpi-content">
+                        <h3>Total Operators</h3>
+                        <p class="kpi-value">Loading...</p>
+                        <p class="kpi-change">Updating...</p>
+                    </div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-icon"><i class="fas fa-truck"></i></div>
+                    <div class="kpi-content">
+                        <h3>Active Vehicles</h3>
+                        <p class="kpi-value">Loading...</p>
+                        <p class="kpi-change">Updating...</p>
+                    </div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-icon"><i class="fas fa-server"></i></div>
+                    <div class="kpi-content">
+                        <h3>System Status</h3>
+                        <p class="kpi-value">Loading...</p>
+                        <p class="kpi-change">Updating...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/dashboard.js"></script>
+    <script src="js/site-admin.js"></script>
+    <script src="js/mobile-menu.js"></script>
+</body>
+</html> 
